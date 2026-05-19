@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CoderDojo 京都四条 - 京都市下京区の子どもプログラミング道場（プレビュー）</title>
+  <meta name="description" content="CoderDojo 京都四条は、京都市下京区のステラ四條 6F（ポノス株式会社）で月1回程度開催している、7〜17歳のための子ども向けプログラミング道場です。">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <meta name="theme-color" content="#1F3A5F">
+  <style>
+    :root {
+      --color-primary:   #1F3A5F;
+      --color-primary-d: #142944;
+      --color-accent:    #F39A4B;
+      --color-accent-d:  #D87E2C;
+      --color-bg:        #FAFAF7;
+      --color-card:      #FFFFFF;
+      --color-text:      #222222;
+      --color-text-sub:  #555555;
+      --color-border:    #E5E1D8;
+      --radius:          12px;
+      --shadow-sm:       0 2px 4px rgba(0,0,0,0.04);
+      --shadow-md:       0 6px 18px rgba(0,0,0,0.08);
+      --max-width:       1040px;
+      --font-jp:         "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic UI", "Yu Gothic", "Meiryo", sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:var(--font-jp);color:var(--color-text);background:var(--color-bg);line-height:1.75;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
+    a:hover{color:var(--color-accent-d)}
+    .container{max-width:var(--max-width);margin:0 auto;padding:0 20px}
+
+    .site-header{background:var(--color-card);border-bottom:1px solid var(--color-border);position:sticky;top:0;z-index:50;box-shadow:var(--shadow-sm)}
+    .site-header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:var(--max-width);margin:0 auto}
+    .site-title{font-size:18px;font-weight:700;color:var(--color-primary);text-decoration:none;display:flex;align-items:center;gap:10px}
+    .site-logo-mark{display:block;width:36px;height:36px;border-radius:8px}
+    .site-title-text{letter-spacing:0.02em}
+    @media (max-width:540px){.site-title-text{font-size:15.5px}}
+    .site-nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+    .site-nav a{color:var(--color-text);text-decoration:none;font-size:14.5px;font-weight:600;white-space:nowrap}
+    .site-nav a:hover{color:var(--color-accent-d)}
+    @media (max-width:720px){
+      .site-header-inner{flex-direction:column;align-items:flex-start;gap:6px;padding:12px 16px}
+      .site-nav{gap:12px 16px;font-size:13.5px;width:100%;justify-content:flex-start}
+    }
+
+    .hero{background:linear-gradient(135deg,var(--color-primary) 0%,#2d4a72 100%);color:#fff;padding:64px 20px 80px;position:relative;overflow:hidden}
+    .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(243,154,75,0.25),transparent 50%);pointer-events:none}
+    .hero-inner{max-width:var(--max-width);margin:0 auto;position:relative;display:grid;grid-template-columns:1.1fr 0.9fr;gap:32px;align-items:center}
+    .hero-illust{display:block;width:100%;height:auto;max-height:360px;filter:drop-shadow(0 12px 32px rgba(0,0,0,0.25))}
+    @media (max-width:800px){.hero-inner{grid-template-columns:1fr}.hero-illust{max-height:240px}}
+    .hero h1{font-size:clamp(28px,5vw,42px);line-height:1.3;margin:0 0 12px;font-weight:800}
+    .hero h1 .accent{color:var(--color-accent)}
+    .hero .tag{font-size:clamp(15px,2.4vw,18px);opacity:.92;margin:0 0 28px}
+    .hero .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;border:2px solid transparent;transition:transform .1s ease,box-shadow .15s ease}
+    .btn-primary{background:var(--color-accent);color:#2A1A06}
+    .btn-primary:hover{background:var(--color-accent-d);color:#fff;transform:translateY(-1px);box-shadow:var(--shadow-md)}
+    .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,0.7)}
+    .btn-outline:hover{background:rgba(255,255,255,0.12);color:#fff}
+
+    section.block{padding:56px 0}
+    section.block.alt{background:#fff}
+    h2.section-title{font-size:24px;font-weight:800;color:var(--color-primary);margin:0 0 10px;display:flex;align-items:baseline;gap:10px}
+    h2.section-title::before{content:"";width:6px;height:22px;background:var(--color-accent);border-radius:3px}
+    .section-lead{color:var(--color-text-sub);margin:0 0 28px}
+
+    .next-event{background:var(--color-card);border:1px solid var(--color-border);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-md);display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center}
+    .next-event .date{text-align:center;background:var(--color-primary);color:#fff;border-radius:var(--radius);padding:16px 18px;min-width:96px}
+    .next-event .date .m{display:block;font-size:13px;opacity:.85}
+    .next-event .date .d{display:block;font-size:38px;font-weight:800;line-height:1;margin:4px 0}
+    .next-event .date .w{display:block;font-size:13px;opacity:.85}
+    .next-event h3{margin:0 0 6px;font-size:19px;color:var(--color-primary)}
+    .next-event .meta{margin:0;color:var(--color-text-sub);font-size:14.5px}
+    .next-event .apply-btn{white-space:nowrap}
+    @media (max-width:640px){.next-event{grid-template-columns:1fr;text-align:center;padding:20px}.next-event .date{justify-self:center}}
+
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    @media (max-width:800px){.feature-grid{grid-template-columns:1fr}}
+    .feature-card{background:var(--color-card);border:1px solid var(--color-border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm);transition:box-shadow .15s ease,transform .1s ease}
+    .feature-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+    .feature-card .icon{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;background:rgba(243,154,75,0.16);color:var(--color-accent-d);border-radius:10px;font-size:22px;margin-bottom:14px}
+    .feature-card h3{margin:0 0 8px;font-size:17px;color:var(--color-primary)}
+    .feature-card p{margin:0;color:var(--color-text-sub);font-size:14.5px}
+
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .chip{background:#fff;border:1px solid var(--color-border);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--color-primary);font-weight:600}
+
+    .site-footer{background:var(--color-primary-d);color:#cfd9e6;padding:36px 0 24px;font-size:14px;margin-top:40px}
+    .site-footer a{color:#ffd6a8}
+    .footer-inner{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px;max-width:var(--max-width);margin:0 auto;padding:0 20px}
+    @media (max-width:760px){.footer-inner{grid-template-columns:1fr}}
+    .footer-col h4{color:#fff;font-size:15px;margin:0 0 10px}
+    .footer-col ul{list-style:none;margin:0;padding:0}
+    .footer-col li{margin:4px 0}
+    .copyright{text-align:center;opacity:.7;margin-top:24px;font-size:12.5px}
+
+    .preview-bar{background:#FFF3CD;border-bottom:1px solid #E0CC7A;color:#664D03;font-size:13px;text-align:center;padding:8px 12px}
+    .preview-bar code{background:#fff;padding:2px 6px;border-radius:4px;border:1px solid #E0CC7A}
+  </style>
+</head>
+<body>
+  <div class="preview-bar">
+    📄 これはローカル確認用のスタンドアロン プレビューです（<code>file://</code> で開いて OK）。
+    本番は GitHub Pages にデプロイされた Jekyll サイトが表示されます。
+  </div>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-title" href="#">
+        <img class="site-logo-mark" src="assets/img/logo-mark.svg" alt="" width="36" height="36">
+        <span class="site-title-text">CoderDojo 京都四条</span>
+      </a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="#about">Dojoについて</a>
+        <a href="#start">はじめての方へ</a>
+        <a href="#events">開催情報</a>
+        <a href="#" title="Jekyll ビルド後に表示されます">活動レポート</a>
+        <a href="#" title="Jekyll ビルド後に表示されます">メンター募集</a>
+        <a href="#access">アクセス</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1>京都四条で、<br><span class="accent">「つくる」</span>を始めよう。</h1>
+        <p class="tag">
+          7〜17歳のための、子どものためのプログラミング道場。<br>
+          Scratch も、micro:bit も、Webサイトも、Pythonも。あなたのつくりたいを応援します。
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://coderdojo-kyoto-shijo.doorkeeper.jp/" target="_blank" rel="noopener">
+            次回の開催を見る →
+          </a>
+          <a class="btn btn-outline" href="#start">はじめての方へ</a>
+        </div>
+      </div>
+      <img class="hero-illust" src="assets/img/hero-illustration.svg" alt="プログラミングのコードブロックとノートPCのイラスト">
+    </div>
+  </section>
+
+  <section class="block" id="events">
+    <div class="container">
+      <h2 class="section-title">次回開催</h2>
+      <p class="section-lead">参加申込は Doorkeeper から。事前申込制・無料です。</p>
+      <div class="next-event">
+        <div class="date">
+          <span class="m">5月</span><span class="d">31</span><span class="w">日（日）</span>
+        </div>
+        <div>
+          <h3>第27回 CoderDojo 京都四条</h3>
+          <p class="meta">
+            🕐 13:00 – 16:00<br>
+            📍 ステラ四條6F（ポノス株式会社 内）<br>
+            🎯 対象：7〜17歳　💴 参加無料・事前申込制
+          </p>
+        </div>
+        <a class="btn btn-primary apply-btn" href="https://coderdojo-kyoto-shijo.doorkeeper.jp/" target="_blank" rel="noopener">申し込む</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="about">
+    <div class="container">
+      <h2 class="section-title">CoderDojo 京都四条 のここがいい</h2>
+      <p class="section-lead">「教えこむ」のではなく、子どもが自分で進める道場です。</p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="icon">🧭</div>
+          <h3>自分で選んで、自分で進める</h3>
+          <p>つくりたいものをまず決めてから、メンターと一緒に進めます。決まったカリキュラムはありません。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">💬</div>
+          <h3>メンターが横で見守る</h3>
+          <p>大人のメンターは「教える人」ではなく、一緒に考え、つまずいたら少しヒントを出す相談相手です。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🎁</div>
+          <h3>無料・申込みも気軽に</h3>
+          <p>参加は無料。継続参加でも、まずは1回だけのお試しでも OK。Doorkeeper から申し込めます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="start">
+    <div class="container">
+      <h2 class="section-title">こんなことができます</h2>
+      <p class="section-lead">道場で取り組まれることが多いテーマの例です。「他のことをやりたい！」も歓迎です。</p>
+      <div class="chips">
+        <span class="chip">Scratch</span>
+        <span class="chip">micro:bit</span>
+        <span class="chip">Webサイト制作 (HTML/CSS)</span>
+        <span class="chip">Python</span>
+        <span class="chip">ゲーム制作</span>
+        <span class="chip">電子工作</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="access">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title" style="justify-content:center;">まずは1回、来てみませんか？</h2>
+      <p class="section-lead">道場の雰囲気が気になる方は、保護者の方の見学も歓迎しています。</p>
+      <div class="cta-row" style="justify-content:center;">
+        <a class="btn btn-primary" href="https://coderdojo-kyoto-shijo.doorkeeper.jp/" target="_blank" rel="noopener">Doorkeeper で申し込む</a>
+        <a class="btn btn-outline" style="color:var(--color-primary); border-color:var(--color-primary);" href="#start">参加の流れを見る</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>CoderDojo 京都四条</h4>
+        <p style="margin:0; line-height:1.7;">
+          京都市下京区の子どものためのプログラミング道場<br>
+          ステラ四條 6F（ポノス株式会社 内）<br>
+          京都府京都市下京区立売東町20-1
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>サイト内</h4>
+        <ul>
+          <li><a href="#about">Dojoについて</a></li>
+          <li><a href="#start">はじめての方へ</a></li>
+          <li><a href="#events">開催情報</a></li>
+          <li><a href="#">活動レポート</a></li>
+          <li><a href="#">メンター募集</a></li>
+          <li><a href="#access">アクセス</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>SNS / 外部</h4>
+        <ul>
+          <li><a href="https://coderdojo-kyoto-shijo.doorkeeper.jp/" target="_blank" rel="noopener">Doorkeeper（参加申込）</a></li>
+          <li><a href="https://x.com/CoderDojoKyo4Jo" target="_blank" rel="noopener">X (@CoderDojoKyo4Jo)</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Facebookページ（開設後）</a></li>
+          <li><a href="https://coderdojo.jp/" target="_blank" rel="noopener">CoderDojo Japan</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">
+      &copy; 2026 CoderDojo 京都四条 ／ 「CoderDojo」は CoderDojo Foundation の登録商標です。
+    </p>
+  </footer>
+</body>
+</html>

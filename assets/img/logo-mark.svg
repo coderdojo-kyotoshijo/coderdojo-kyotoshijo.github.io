@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36" role="img" aria-label="CoderDojo 太極図マーク">
+  <!-- CoderDojo 公式 太極図（yin-yang）マーク -->
+  <!-- 赤い背景（陽） -->
+  <circle cx="18" cy="18" r="18" fill="#E83A20"/>
+  <!-- 白い領域（陰）：上の小半円＋下の小半円＋左の大半円 -->
+  <path d="M18,0 A9,9,0,0,1,18,18 A9,9,0,0,0,18,36 A18,18,0,0,0,18,0 Z" fill="#FFFFFF"/>
+  <!-- 陽の中の陰（小さい赤丸） -->
+  <circle cx="18" cy="9" r="4.5" fill="#E83A20"/>
+  <!-- 陰の中の陽（小さい白丸） -->
+  <circle cx="18" cy="27" r="4.5" fill="#FFFFFF"/>
+</svg>

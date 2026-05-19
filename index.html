@@ -1,0 +1,164 @@
+---
+layout: default
+title: "ホーム"
+description: "CoderDojo 京都四条 は、京都市下京区のステラ四條 6F（ポノス株式会社）で月1回程度開催している、7〜17歳のための子ども向けプログラミング道場です。"
+---
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1>京都四条で、<br><span class="accent">「つくる」</span>を始めよう。</h1>
+      <p class="tag">
+        7〜17歳のための、子どものためのプログラミング道場。<br>
+        Scratch も、micro:bit も、Webサイトも、Pythonも。あなたのつくりたいを応援します。
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="{{ site.links.doorkeeper }}" target="_blank" rel="noopener">
+          次回の開催を見る →
+        </a>
+        <a class="btn btn-outline" href="{{ '/getting-started/' | relative_url }}">
+          はじめての方へ
+        </a>
+      </div>
+    </div>
+    <img class="hero-illust"
+         src="{{ '/assets/img/hero-illustration.svg' | relative_url }}"
+         alt="プログラミングのコードブロックとノートPCのイラスト">
+  </div>
+</section>
+
+<!-- =====================================================
+     アイキャッチ写真ギャラリー
+     写真の差し替え方：
+       1. assets/img/gallery/ フォルダに画像を置く
+       2. 下の src の ".svg" を実際のファイル名に書き換える
+          例: photo-main.svg → photo-main.jpg
+       3. alt= の文言も写真の内容に合わせて更新してください
+     ===================================================== -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-grid">
+      <figure class="gallery-main">
+        <img src="{{ '/assets/img/gallery/photo-main.svg' | relative_url }}"
+             alt="道場の様子" loading="lazy">
+      </figure>
+      <div class="gallery-subs">
+        <figure class="gallery-sub">
+          <img src="{{ '/assets/img/gallery/photo-sub1.svg' | relative_url }}"
+               alt="ニンジャの様子" loading="lazy">
+        </figure>
+        <figure class="gallery-sub">
+          <img src="{{ '/assets/img/gallery/photo-sub2.svg' | relative_url }}"
+               alt="メンターと一緒に" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 次回開催 -->
+<section class="block">
+  <div class="container">
+    <h2 class="section-title">次回開催</h2>
+    <p class="section-lead">参加申込は Doorkeeper から。事前申込制・無料です。</p>
+
+    <div class="next-event">
+      <div class="date">
+        <span class="m">5月</span>
+        <span class="d">31</span>
+        <span class="w">日（日）</span>
+      </div>
+      <div>
+        <h3>第27回 CoderDojo 京都四条</h3>
+        <p class="meta">
+          🕐 13:00 – 16:00<br>
+          📍 {{ site.venue.name }}<br>
+          🎯 対象：{{ site.target_age }}　💴 参加無料・事前申込制
+        </p>
+      </div>
+      <a class="btn btn-primary apply-btn" href="{{ site.links.doorkeeper }}" target="_blank" rel="noopener">申し込む</a>
+    </div>
+  </div>
+</section>
+
+<!-- 3つの特徴 -->
+<section class="block alt">
+  <div class="container">
+    <h2 class="section-title">CoderDojo 京都四条 のここがいい</h2>
+    <p class="section-lead">「教えこむ」のではなく、子どもが自分で進める道場です。</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon">🧭</div>
+        <h3>自分で選んで、自分で進める</h3>
+        <p>つくりたいものをまず決めてから、メンターと一緒に進めます。決まったカリキュラムはありません。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">💬</div>
+        <h3>メンターが横で見守る</h3>
+        <p>大人のメンターは「教える人」ではなく、一緒に考え、つまずいたら少しヒントを出す相談相手です。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🎁</div>
+        <h3>無料・申込みも気軽に</h3>
+        <p>参加は無料。継続参加でも、まずは1回だけのお試しでも OK。Doorkeeper から申し込めます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     チャンピオン紹介
+     編集方法：
+       ・写真: assets/img/champion.jpg に画像を置き、
+               下の src を champion-placeholder.svg → champion.jpg に変更
+       ・名前: champion-name の中を書き換える
+       ・役職: champion-role の中を書き換える（例：チャンピオン / 共同チャンピオン）
+       ・自己紹介文: champion-bio の中を書き換える
+     ===================================================== -->
+<section class="block">
+  <div class="container">
+    <h2 class="section-title">チャンピオン紹介</h2>
+    <p class="section-lead">道場を運営するチャンピオンをご紹介します。</p>
+    <div class="champion-card">
+      <div class="champion-photo-wrap">
+        <img class="champion-photo"
+             src="{{ '/assets/img/champion-placeholder.svg' | relative_url }}"
+             alt="チャンピオンの写真">
+      </div>
+      <div class="champion-body">
+        <p class="champion-role">チャンピオン（代表）</p>
+        <h3 class="champion-name">お名前をここに</h3>
+        <p class="champion-bio">
+          自己紹介文をここに記載します。CoderDojo を始めたきっかけ、子どもたちへの想い、日頃の活動などをお伝えください。2〜4文程度が読みやすいボリュームです。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 取扱内容 -->
+<section class="block">
+  <div class="container">
+    <h2 class="section-title">こんなことができます</h2>
+    <p class="section-lead">道場で取り組まれることが多いテーマの例です。「他のことをやりたい！」も歓迎です。</p>
+    <div class="chips">
+      {% for topic in site.topics %}
+        <span class="chip">{{ topic }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="block alt">
+  <div class="container" style="text-align:center;">
+    <h2 class="section-title" style="justify-content:center;">まずは1回、来てみませんか？</h2>
+    <p class="section-lead">道場の雰囲気が気になる方は、保護者の方の見学も歓迎しています。</p>
+    <div class="cta-row" style="justify-content:center;">
+      <a class="btn btn-primary" href="{{ site.links.doorkeeper }}" target="_blank" rel="noopener">Doorkeeper で申し込む</a>
+      <a class="btn btn-outline" style="color:var(--color-primary); border-color:var(--color-primary);" href="{{ '/getting-started/' | relative_url }}">参加の流れを見る</a>
+    </div>
+  </div>
+</section>

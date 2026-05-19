@@ -1,0 +1,73 @@
+# =========================================================
+# CoderDojo 京都四条 公式サイト  Jekyll 設定ファイル
+# =========================================================
+
+# ----- 基本情報 -----
+title: "CoderDojo 京都四条"
+tagline: "京都市下京区の子どものためのプログラミング道場"
+description: >-
+  CoderDojo 京都四条 は、7〜17歳を対象にした子どものためのプログラミング道場です。
+  京都市下京区のステラ四條 6F（ポノス株式会社）で月1回程度開催しています。
+  Scratch / micro:bit / Web / Python など、それぞれが学びたいことを自分のペースで進められます。
+
+# ----- 公開URL -----
+# GitHub Pages のサブドメイン公開時:
+#   url      : https://coderdojo-kyoto-shijo.github.io
+#   baseurl  : ""  (organizationのデフォルトページとして公開する場合)
+# プロジェクトページとして公開する場合:
+#   url      : https://<org>.github.io
+#   baseurl  : "/website"
+url: "https://coderdojo-kyoto-shijo.github.io"
+baseurl: ""
+
+# ----- ロケール / 言語 -----
+lang: "ja"
+locale: "ja_JP"
+timezone: "Asia/Tokyo"
+
+# ----- SNS / 外部リンク -----
+links:
+  doorkeeper: "https://coderdojo-kyoto-shijo.doorkeeper.jp/"
+  x:          "https://x.com/CoderDojoKyo4Jo"
+  facebook:   "https://www.facebook.com/CoderDojoKyoShijo"   # 開設後に正しいURLへ
+  coderdojo_japan: "https://coderdojo.jp/"
+
+# ----- 会場情報 -----
+venue:
+  name: "ステラ四條 6F（ポノス株式会社 内）"
+  address: "京都府京都市下京区立売東町20-1"
+  city: "京都市下京区"
+  nearest_station: "阪急 京都河原町駅 / 京都市営地下鉄 四条駅"
+
+# ----- 対象・取扱内容 -----
+target_age: "7〜17歳"
+topics:
+  - "Scratch"
+  - "micro:bit"
+  - "Webサイト制作 (HTML/CSS)"
+  - "Python"
+  - "ゲーム制作"
+  - "電子工作"
+
+# ----- Jekyll ビルド設定 -----
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# テーマは使わず、_layouts / _includes / assets でフルカスタム
+theme: null
+
+# 除外
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+  - .github/
+
+# ----- プラグイン（GitHub Pagesでサポートされているもののみ） -----
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap

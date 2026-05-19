@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice">
+  <rect width="300" height="300" fill="#E8EDF5"/>
+  <!-- 人物シルエット（頭） -->
+  <circle cx="150" cy="110" r="52" fill="#1F3A5F" opacity="0.18"/>
+  <!-- 体 -->
+  <ellipse cx="150" cy="245" rx="78" ry="60" fill="#1F3A5F" opacity="0.15"/>
+</svg>

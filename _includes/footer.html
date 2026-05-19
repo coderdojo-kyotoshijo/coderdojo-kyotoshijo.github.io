@@ -1,0 +1,35 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>{{ site.title }}</h4>
+      <p style="margin:0; line-height:1.7;">
+        {{ site.tagline }}<br>
+        {{ site.venue.name }}<br>
+        {{ site.venue.address }}
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>サイト内</h4>
+      <ul>
+        <li><a href="{{ '/about/' | relative_url }}">Dojoについて</a></li>
+        <li><a href="{{ '/getting-started/' | relative_url }}">はじめての方へ</a></li>
+        <li><a href="{{ '/events/' | relative_url }}">開催情報</a></li>
+        <li><a href="{{ '/reports/' | relative_url }}">活動レポート</a></li>
+        <li><a href="{{ '/mentor/' | relative_url }}">メンター募集</a></li>
+        <li><a href="{{ '/access/' | relative_url }}">アクセス</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>SNS / 外部</h4>
+      <ul>
+        <li><a href="{{ site.links.doorkeeper }}" target="_blank" rel="noopener">Doorkeeper（参加申込）</a></li>
+        <li><a href="{{ site.links.x }}" target="_blank" rel="noopener">X (@CoderDojoKyo4Jo)</a></li>
+        <li><a href="{{ site.links.facebook }}" target="_blank" rel="noopener">Facebookページ</a></li>
+        <li><a href="{{ site.links.coderdojo_japan }}" target="_blank" rel="noopener">CoderDojo Japan</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copyright">
+    &copy; {{ "now" | date: "%Y" }} CoderDojo 京都四条 ／ 「CoderDojo」は CoderDojo Foundation の登録商標です。
+  </p>
+</footer>

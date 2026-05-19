@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="500" fill="#E8EDF5"/>
+  <!-- カメラアイコン（ボディ） -->
+  <rect x="320" y="195" width="160" height="115" rx="10" fill="none" stroke="#1F3A5F" stroke-width="5" opacity="0.35"/>
+  <!-- カメラのバンプ -->
+  <rect x="355" y="183" width="50" height="18" rx="6" fill="#1F3A5F" opacity="0.35"/>
+  <!-- レンズ -->
+  <circle cx="400" cy="252" r="34" fill="none" stroke="#1F3A5F" stroke-width="5" opacity="0.35"/>
+  <circle cx="400" cy="252" r="22" fill="#1F3A5F" opacity="0.12"/>
+  <!-- テキスト -->
+  <text x="400" y="350" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, Meiryo, sans-serif" font-size="18" fill="#1F3A5F" text-anchor="middle" opacity="0.55" font-weight="600">メインの写真（大）</text>
+  <text x="400" y="378" font-family="Hiragino Kaku Gothic ProN, Yu Gothic, Meiryo, sans-serif" font-size="13" fill="#555" text-anchor="middle" opacity="0.45">assets/img/gallery/photo-main.jpg に画像を置いてください</text>
+</svg>
