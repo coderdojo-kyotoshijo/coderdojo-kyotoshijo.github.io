@@ -123,15 +123,22 @@ description: "CoderDojo 京都四条 は、京都市下京区のステラ四條 
     <p class="section-lead">道場を運営するチャンピオンをご紹介します。</p>
     <div class="champion-card">
       <div class="champion-photo-wrap">
+        <!-- 写真の変更方法（どちらか選んでください）：
+             A) X アイコンを自動取得（常に最新が表示される）→ このままでOK
+             B) 画像ファイルを使う場合 → assets/img/champion.jpg を置いて
+                src を "{{ '/assets/img/champion.jpg' | relative_url }}" に書き換え -->
         <img class="champion-photo"
-             src="{{ '/assets/img/champion-placeholder.svg' | relative_url }}"
+             src="https://unavatar.io/twitter/honeniq"
              alt="チャンピオンの写真">
       </div>
       <div class="champion-body">
         <p class="champion-role">チャンピオン（代表）</p>
-        <h3 class="champion-name">お名前をここに</h3>
+        <!-- ✏️ 名前を記入してください -->
+        <h3 class="champion-name">honeniq</h3>
         <p class="champion-bio">
-          自己紹介文をここに記載します。CoderDojo を始めたきっかけ、子どもたちへの想い、日頃の活動などをお伝えください。2〜4文程度が読みやすいボリュームです。
+          CoderDojoとの出会いは2016年、大阪のRubyコミュニティで誘ってもらって参加したCoderDojo本町が最初でした。
+          それからいくつかのDojoでメンターを続け、2023年にCoderDojo京都四条を立ち上げました。
+          このDojoでの活動で、プログラミングの楽しさ・試行錯誤することの喜びを体験してもらえたら嬉しいです。
         </p>
       </div>
     </div>
