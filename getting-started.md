@@ -59,6 +59,19 @@ CoderDojo 京都四条 にはじめて参加される方へ。「準備するも
 ### Q. 保護者は何をしていればいいですか？
 お子さんの作業を見守っていただくのも歓迎ですし、別室や近隣でお仕事や読書をされている方もいらっしゃいます。
 
-## 5. 何か困ったら
+## 5. Discord コミュニティに参加しよう
 
-事前のご質問は [Doorkeeper のお問い合わせ]({{ site.links.doorkeeper }}contact/new) からどうぞ。
+CoderDojo 京都四条 では [Discord サーバー](https://discord.gg/znk5mDqdR) を運営しています。
+ニンジャ・保護者・メンター・興味のある方、どなたでもご参加いただけます。
+
+Discord では以下のことができます。
+
+- **開催情報・お知らせ**を受け取る
+- 道場の前後に**質問や相談**をする
+- 参加したニンジャ同士やメンターと**交流**する
+
+[Discord に参加する（招待リンク）](https://discord.gg/znk5mDqdR)
+
+## 6. 何か困ったら
+
+事前のご質問は [Discord](https://discord.gg/znk5mDqdR) か [Doorkeeper のお問い合わせ]({{ site.links.doorkeeper }}contact/new) からどうぞ。

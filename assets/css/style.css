@@ -357,6 +357,68 @@ h2.section-title::before {
   .champion-photo { width: 130px; }
 }
 
+/* ===== Discord Banner ===== */
+.discord-banner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  align-items: center;
+  background: var(--color-card);
+  border: 1px solid #c9cdf7;
+  border-left: 5px solid #5865F2;
+  border-radius: var(--radius);
+  padding: 32px 36px;
+  box-shadow: var(--shadow-md);
+}
+.discord-icon-wrap {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  background: #5865F2;
+  border-radius: 18px;
+}
+.discord-logo {
+  width: 44px;
+  height: 44px;
+  fill: #ffffff;
+}
+.discord-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin: 0 0 8px;
+}
+.discord-desc {
+  color: var(--color-text-sub);
+  margin: 0 0 20px;
+  line-height: 1.8;
+}
+.btn-discord {
+  background: #5865F2;
+  color: #ffffff;
+  border: 2px solid transparent;
+}
+.btn-discord:hover {
+  background: #4752c4;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+@media (max-width: 640px) {
+  .discord-banner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px;
+    text-align: center;
+  }
+  .discord-icon-wrap {
+    margin: 0 auto;
+  }
+}
+
 /* ===== Article (content pages) ===== */
 .content { padding: 48px 0 72px; }
 .content article {
