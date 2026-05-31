@@ -67,7 +67,7 @@ CoderDojo 京都四条 では [Discord サーバー](https://discord.gg/znk5mDqd
 Discord では以下のことができます。
 
 - **開催情報・お知らせ**を受け取る
-- 道場の前後に**質問や相談**をする
+- Dojo の前後に**質問や相談**をする
 - 参加したニンジャ同士やメンターと**交流**する
 
 [Discord に参加する（招待リンク）](https://discord.gg/znk5mDqdR)
