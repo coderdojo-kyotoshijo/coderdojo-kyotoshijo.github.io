@@ -24,10 +24,10 @@ description: "CoderDojo 京都四条 の次回開催・過去の開催実績の�
 
 ## 開催ペース
 
-おおむね **月1回程度・日曜午後** の開催を続けています。会場や日程が変わる場合は SNS と Doorkeeper でお知らせします。
+おおむね **月1回程度・土日祝午後** の開催を続けています。会場や日程が変わる場合は SNS と Doorkeeper でお知らせします。
 
 ## 通知を受け取りたい方へ
 
 - **Doorkeeper のメンバーになる：** 新しいイベントが公開されたときにメールでお知らせがあります 👉 [メンバー登録]({{ site.links.doorkeeper }}member/new)
-- **X をフォロー：** [@CoderDojoKyo4Jo]({{ site.links.x }}) で開催ごとに告知しています
-- **Facebookページにいいね：** [Facebookページ]({{ site.links.facebook }}) で写真付きのレポートも配信しています
+<!-- - **X をフォロー：** [@CoderDojoKyo4Jo]({{ site.links.x }}) で開催ごとに告知しています -->
+<!-- - **Facebookページにいいね：** [Facebookページ]({{ site.links.facebook }}) で写真付きのレポートも配信しています -->
