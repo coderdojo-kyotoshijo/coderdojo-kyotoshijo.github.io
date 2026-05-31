@@ -1,0 +1,20 @@
+services:
+  jekyll:
+    image: ruby:3.1-slim
+    working_dir: /site
+    volumes:
+      - .:/site
+      - bundle_cache:/usr/local/bundle
+    ports:
+      - "4000:4000"
+    command: >
+      bash -c "
+        apt-get update -qq && apt-get install -y --no-install-recommends build-essential &&
+        gem install bundler -v '~> 2.4' --no-document &&
+        rm -f Gemfile.lock &&
+        bundle install &&
+        bundle exec jekyll serve --host 0.0.0.0 --livereload
+      "
+
+volumes:
+  bundle_cache:
